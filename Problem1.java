@@ -57,10 +57,10 @@ class Problem1 extends ConsoleProgram {
   public static String createPassword(String strFirstName, String strLastName, String strStudentNumber){
     String strPassword = "";
     if(strFirstName.isBlank() || strLastName.isBlank() || strStudentNumber.isBlank()){
-      throw new IllegalArgumentException("incorrect parameters(s)");
+      throw new IllegalArgumentException("incorrect parameter(s)");
     }
     if(strStudentNumber.length() != 9){
-      throw new IllegalArgumentException("incorrect parameters(s)");
+      throw new IllegalArgumentException("incorrect parameter(s)");
     }
     strPassword += strLastName.substring(0, 4).toLowerCase();
     strPassword += Character.toUpperCase(strFirstName.charAt(0));
