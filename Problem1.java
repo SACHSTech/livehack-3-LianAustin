@@ -62,7 +62,13 @@ class Problem1 extends ConsoleProgram {
     if(strStudentNumber.length() != 9){
       throw new IllegalArgumentException("incorrect parameter(s)");
     }
-    strPassword += strLastName.substring(0, 4).toLowerCase();
+    // If the last name is less then 4, use the full last name
+    if(strLastName.length() < 4){
+      strPassword += strLastName.toLowerCase();
+    }
+    else{
+      strPassword += strLastName.substring(0, 4).toLowerCase();
+    }
     strPassword += Character.toUpperCase(strFirstName.charAt(0));
     strPassword += strStudentNumber.substring(3, 6);
     return strPassword;
