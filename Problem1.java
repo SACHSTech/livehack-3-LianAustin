@@ -13,7 +13,7 @@ class Problem1 extends ConsoleProgram {
     System.out.println("Your password is: " + strPassword);
   }
   /**
-   * Description: When given a username as a string parameter, returns true or false if the uesrname meets the following conditions:
+   * Description: When given a username as a string parameter, returns true or false if the username meets the following conditions:
    * The username consists of only letters and digits, it has at least one digit, and the length is greater then 7 characters.
    * @author: Austin L
    * @param strUsername the username to validate
