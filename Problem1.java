@@ -9,7 +9,7 @@ class Problem1 extends ConsoleProgram {
     // The username validation and password is done in two seperate lines instead of being inside the print statements so it prints out the exception before printing out if the username is valid or not
     Boolean boolUsername = validateUsername(strUsername);
     String strPassword = createPassword(strFirstName, strLastName, strStudentNumber);
-    System.out.println("\nValid Username: " + boolUsername);
+    System.out.println("\nValid username: " + boolUsername);
     System.out.println("Your password is: " + strPassword);
   }
   /**
